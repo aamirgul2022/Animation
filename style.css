@@ -1,0 +1,316 @@
+    #header {
+        background-color: #fff;
+        position: relative;
+        top: -41px;
+        left: -41px;
+        /* width: 155%; */
+        /* min-width: 88%; */
+        display: flex;
+        justify-content: center;
+        width: 105%;
+        text-transform: uppercase;
+    }
+    
+    @media(max-width:990px) {
+        #header {
+            padding-top: 50px;
+            width: 112%;
+        }
+    }
+    
+    .container-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .container-header img {
+        height: 20vh;
+        padding-right: 60rem;
+    }
+    
+    @media (max-width:990px) {
+        .container-header img {
+            display: contents;
+            /* padding-right: 60rem; */
+        }
+    }
+    
+    body {
+        background-color: lightcyan;
+        width: 97%;
+    }
+    
+    h1 {
+        font-size: 48px;
+        font-family: 900;
+        color: #000;
+    }
+    
+    p {
+        color: #000;
+        font-size: 28px;
+        position: relative;
+        bottom: 22px;
+        left: 16px;
+    }
+    
+    #mywork {
+        display: flex;
+        justify-content: space-between;
+        margin-left: 97px;
+    }
+    
+    @media (max-width:990px) {
+        h1 {
+            font-size: 18px;
+        }
+        p {
+            font-size: 9px;
+            line-height: 03;
+            position: relative;
+            left: 1px;
+        }
+    }
+    
+    label {
+        display: block;
+        width: 50px;
+        height: 50px;
+        cursor: pointer;
+        position: relative;
+        right: 38rem;
+        top: 10rem;
+    }
+    
+    @media (max-width:990px) {
+        span.checkbox {
+            position: relative;
+            left: 35rem;
+            bottom: 2rem;
+        }
+    }
+    
+    input {
+        position: absolute;
+        transform: scale(0);
+    }
+    
+    input:checked~.checkbox {
+        transform: rotate(45deg);
+        width: 20px;
+        margin-left: 16px;
+        border-color: #24c78e;
+        border-top-color: transparent;
+        border-left-color: transparent;
+        border-radius: 0;
+    }
+    
+    .checkbox {
+        display: block;
+        width: inherit;
+        height: inherit;
+        border: 3px solid #ff6600;
+        border-radius: 6px;
+        transition: all 0.375s;
+    }
+    /* >>>>>>>>>>>>>>>>>>>>>Emoji>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+    
+    .emoji {
+        padding-right: 289px;
+    }
+    
+    @media (max-width:990px) {
+        .emoji {
+            position: relative;
+            left: 85px;
+        }
+    }
+    
+    .face {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        background: rgb(251 217 18);
+        box-shadow: inset -3px 0 0 4px rgba(255, 102, 0, 015);
+        position: relative;
+        /* right: 395px; */
+        /* top: 171px; */
+    }
+    
+    .y {
+        position: relative;
+        bottom: 7px;
+        right: 2px;
+    }
+    
+    .eye {
+        width: 30px;
+        height: 30px;
+        background-color: #fff;
+        border-radius: 50%;
+        position: absolute;
+        top: 32px;
+        left: 17px;
+    }
+    
+    .eye:last-child {
+        left: auto;
+        right: 12px;
+    }
+    
+    .eye::after {
+        content: '';
+        width: 12px;
+        height: 12px;
+        background-color: #000;
+        border-radius: 9px;
+        position: absolute;
+        top: 84%;
+        left: 51%;
+        transform: translate(-50%, -50%);
+        animation: rolleyes 2s ease-in-out infinite;
+    }
+    
+    .mouth {
+        width: 20px;
+        height: 5px;
+        background-color: #884d0e;
+        border-radius: 5px;
+        position: absolute;
+        bottom: 22px;
+        left: 87%;
+        transform: translate(-50px);
+    }
+    
+    @keyframes rolleyes {
+        10% {
+            transform: translate(-14px, -50%);
+        }
+        15% {
+            transform: translate(-14px, -10px);
+        }
+        20%,
+        100% {
+            transform: translate(-50%, -15px);
+        }
+    }
+    /* >>>>>>>>>>>>>>>>>>>>>>>>>>>Loader>>>>>>>>>>>>>>>>>>>>> */
+    
+    #effect {
+        display: block;
+        padding-top: 45px;
+        margin-left: 97px;
+    }
+    
+    @media (max-width:990px) {
+        #effect {
+            margin-left: 13px;
+        }
+    }
+    
+    .loader {
+        width: 120px;
+        height: 75px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-end;
+        justify-content: space-between;
+        position: relative;
+        left: 68rem;
+        top: 80px;
+    }
+    
+    @media (max-width:990px) {
+        .loader {
+            position: relative;
+            left: 16rem;
+            max-width: 27%;
+        }
+    }
+    
+    .loader h1 {
+        white-space: nowrap;
+        /* padding-right: 19px; */
+        position: relative;
+        right: 8px;
+        bottom: 20px;
+        line-height: 2;
+    }
+    
+    @media (max-width:990px) {
+        .loader h1 {
+            padding-left: 49px;
+        }
+    }
+    
+    .loader span {
+        text-transform: uppercase;
+        margin: auto;
+        color: darkred;
+        font-size: 23px;
+        font-weight: 900;
+    }
+    
+    .ball {
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        background-color: #ff6600;
+        animation: bounce .5s alternate infinite;
+    }
+    
+    .ball:nth-child(2) {
+        animation-delay: .16s;
+    }
+    
+    .ball:nth-child(3) {
+        animation-delay: .32s;
+    }
+    
+    @keyframes bounce {
+        from {
+            transform: scaleX(1.25);
+        }
+        to {
+            transform: translateY(-50%) scaleX(1);
+        }
+    }
+    /* >>>>>>>>>>>>>>>>>>>>>>Clock Spinner>>>>>>>>>>>>>>>>>>>>>>>>> */
+    
+    .clock {
+        width: 120px;
+        height: 120px;
+        border: 8px solid #434343;
+        border-radius: 50%;
+        position: relative;
+        left: 152px;
+        background: repeating-radial-gradient(black, transparent 100px);
+    }
+    
+    @media (max-width:990px) {
+        .clock {
+            margin-left: -146px;
+        }
+    }
+    
+    .clock::before {
+        content: "";
+        position: absolute;
+        width: 12px;
+        height: 45%;
+        background-color: #ff6600;
+        ;
+        border-radius: 100px;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%);
+        transform-origin: top;
+        animation: rotate 2s linear infinite;
+    }
+    
+    @keyframes rotate {
+        to {
+            transform: translateX(-50%) rotate(360deg);
+        }
+    }
